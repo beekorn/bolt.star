@@ -10,15 +10,6 @@ export default defineConfig((config) => {
     build: {
       target: 'esnext',
     },
-    optimizeDeps: {
-      exclude: [
-        '@remix-run/dev',
-        '@remix-run/cloudflare',
-        'vite-plugin-node-polyfills',
-        'vite-plugin-optimize-css-modules',
-        'unocss'
-      ],
-    },
     plugins: [
       nodePolyfills({
         include: ['path', 'buffer'],
