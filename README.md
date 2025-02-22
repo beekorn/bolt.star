@@ -13,7 +13,7 @@ Bolt.Star is a powerful AI-powered development environment. This guide will help
    - Install Node.js dependencies
    - Set up Remix dependencies
    - Create a convenient desktop shortcut
-   - the installation may take a few minutes be patient
+   - The installation may take a few minutes , be patient
 
 2. Start the application using either:
    - Double-click the `bolt.lnk` shortcut, or
