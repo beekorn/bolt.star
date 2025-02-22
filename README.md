@@ -12,7 +12,8 @@ Bolt.Star is a powerful AI-powered development environment. This guide will help
 1. Run `install.bat` to set up all required dependencies. This will:
    - Install Node.js dependencies
    - Set up Remix dependencies
-   Note : The installation may take a few minutes , be patient
+   
+Note : The installation may take a few minutes , be patient
 
 2. Start the application using either:
    - Double-click the `bolt.lnk` shortcut, or
