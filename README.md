@@ -15,7 +15,7 @@ Bolt.Star is a powerful AI-powered development environment. This guide will help
    
 Note : The installation may take a few minutes , be patient
 
-2. Rename .env.example to .env once you have filled in the api keys in the environment variables.
+2. Rename .env.example to .env once you have filled in the api keys.
 
 3. Start the application using either:
    - Double-click the `bolt.lnk` shortcut, or
