@@ -8,16 +8,19 @@ echo Note: For best results, use Chrome Canary for local development
 REM Start the server and browser in parallel
 start /b npm run dev
 
-REM Reduce timeout and check for server availability
+REM Enhanced server readiness check
 set PORT=5173
 set ATTEMPTS=0
 :WAIT_FOR_SERVER
-timeout /t 1 /nobreak > nul
+timeout /t 2 /nobreak > nul
 set /a ATTEMPTS+=1
 curl -f http://localhost:%PORT% >nul 2>&1
 if errorlevel 1 (
-    if %ATTEMPTS% leq 10 goto WAIT_FOR_SERVER
+    echo Waiting for server to initialize... Attempt %ATTEMPTS% of 15
+    if %ATTEMPTS% leq 15 goto WAIT_FOR_SERVER
 ) else (
+    REM Add additional delay for optimization completion
+    timeout /t 5 /nobreak > nul
     if exist "%LOCALAPPDATA%\Google\Chrome SxS\Application\chrome.exe" (
         echo Opening Chrome Canary...
         start "" "%LOCALAPPDATA%\Google\Chrome SxS\Application\chrome.exe" "http://localhost:%PORT%"
