@@ -1,5 +1,5 @@
 @echo off
-echo Starting Bolt.custom installation...
+echo Starting Bolt.star installation...
 
 REM Check if Node.js is installed
 where node >nul 2>nul
