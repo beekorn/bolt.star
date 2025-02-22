@@ -16,6 +16,8 @@
 
 .Chat {
   opacity: 1;
+  background-color: rgba(255, 0, 0, 0.05);
+  border: 1px solid rgba(255, 0, 0, 0.1);
 }
 
 .PromptEffectContainer {
@@ -36,12 +38,12 @@
   rx: calc(8px - var(--prompt-line-stroke-width));
   fill: transparent;
   stroke-width: var(--prompt-line-stroke-width);
-  stroke: url(#line-gradient);
+  stroke: linear-gradient(to right, #ff0000, #ff6b6b);
   stroke-dasharray: 35px 65px;
   stroke-dashoffset: 10;
 }
 
 .PromptShine {
-  fill: url(#shine-gradient);
+  fill: linear-gradient(to right, rgba(255, 0, 0, 0.2), rgba(255, 107, 107, 0.4));
   mix-blend-mode: overlay;
 }
